@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Example</title>
+    <style>
+        /* Static Positioning (Default) */
+        .static-box {
+            background-color: rgb(69, 80, 84);
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        /* Relative Positioning */
+        .relative-box {
+            position: relative;
+            background-color: lightgreen;
+            padding: 10px;
+            border: 1px solid green;
+            top: 20px;
+            /* Move down */
+            left: 10px;
+            /* Move right */
+        }
+
+        /* Absolute Positioning */
+        .absolute-box {
+            position: absolute;
+            background-color: lightcoral;
+            padding: 10px;
+            border: 1px solid rgb(126, 161, 168);
+            top: 50px;
+            /* Move 50px from the top */
+            left: 150px;
+            /* Move 150px from the left */
+        }
+
+        /* Fixed Positioning */
+        .fixed-box {
+            position: fixed;
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+            border: 1px solid goldenrod;
+            top: 1px;
+            right: 0;
+        }
+
+        /* Sticky Positioning */
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: lightpink;
+            padding: 10px;
+            border: 1px solid pink;
+        }
+
+        /* General Styling for Visualization */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .spacer {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fixed Box -->
+    <div class="fixed-box">This box is Fixed (always at the top-right corner).</div>
+
+    <!-- Sticky Box -->
+    <div class="sticky-box">This box is Sticky (sticks to the top when scrolling).</div>
+
+    <div class="container">
+        <!-- Static Box -->
+        <div class="static-box">This box is Static (default positioning).</div>
+
+        <!-- Relative Box -->
+        <div class="relative-box">This box is Relative (moved from its normal flow).</div>
+
+        <!-- Absolute Box -->
+        <div class="absolute-box">This box is Absolute (relative to the nearest positioned ancestor).</div>
+
+        <div class="spacer"></div>
+        <p>Scroll down to see the sticky and fixed boxes in action.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+</body>
+
+</html>
